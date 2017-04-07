@@ -1,5 +1,5 @@
 const app = require('./server')
-const db = app.get('db').user
+const db = app.get('db')
 
 module.exports = {
   Create: function(req, res, next) {

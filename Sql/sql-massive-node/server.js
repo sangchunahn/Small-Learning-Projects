@@ -14,7 +14,7 @@ var conn = massive.connectSync({
 
 app.set('db', conn);
 var db = app.get('db');
-var controller = require('./productCtrl.js');
+var controller = require('./productsCtrl.js');
 app.get('/api/products', controller.GetAll);
 app.get('/api/product/:productId', controller.GetOne);
 app.put('/api/product/:productId', controller.Update);
