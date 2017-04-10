@@ -1,11 +1,27 @@
-import { FETCH_POSTS } from '../actions/index'
-const INITIAL_STATE = { all: [], post: null}
+ import axios from 'axios';
 
-export default function(state = INITIAL_STATE, action) {
-    switch(action.type) {
-        case FETCH_POSTS:
+export const FETCH_POSTS = 'FETCH_POSTS'
+export const CREATE_POST = 'CREATE_POST'
 
-        default:
-            return state;
+const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
+const API_KEY = "?key=asdfasdfgwedfdd"
+
+export function fetchPosts(){
+
+    const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
+
+
+    return {
+        type: FETCH_POSTS,
+        payload: request 
+    };
+} 
+
+export function createPost(props) {
+    const request = axios.post(`${ROOT_URL}/posts${API_KEY}`, props)
+
+    return {
+        type: CREATE_POST,
+        payload: request
     }
 }
