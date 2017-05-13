@@ -65,7 +65,7 @@ describe('testing isPrime function', () => {
     it('if the input is an object it should return false', () => {
         expect(isPrime({})).to.be.false;
     })
-    it('if the input is an [] it should return false', () => {
+    it('if the input is a [] it should return false', () => {
         expect(isPrime([])).to.be.false;
     })
     it('if the input is a string it should return false', () => {
