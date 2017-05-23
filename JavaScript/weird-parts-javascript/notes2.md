@@ -44,4 +44,8 @@
 
 - if you type 'this' inside of the console in the empty html and app.js you will see Window object
 - this window object is the global object inside of browsers
-- this is the javascript engine doing this for us
+- this is the javascript engine doing this for us and created a var called 'this'
+- 'this' is the window object
+
+- Global means 'not inside a function'
+- in Javascript when you craete a variable and function it attaches to the global object
