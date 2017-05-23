@@ -37,3 +37,11 @@
 
 - A Collection of name/value pairs
 
+## The Global Environment and the global object
+
+- whenever code is run in javaScript it is run in execution context
+- execution context creates a global object and 'this' created by javascript engine
+
+- if you type 'this' inside of the console in the empty html and app.js you will see Window object
+- this window object is the global object inside of browsers
+- this is the javascript engine doing this for us
