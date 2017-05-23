@@ -49,3 +49,6 @@
 
 - Global means 'not inside a function'
 - in Javascript when you craete a variable and function it attaches to the global object
+
+- outer environment is running outside of the function
+- exection context is running your code
