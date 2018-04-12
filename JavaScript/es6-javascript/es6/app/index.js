@@ -90,3 +90,11 @@ const addSuffix = (x) => {
 //Closures in JavaScript and ES6 refer to functions that remember their creation environment and can further reference that environment’s independent variables.
 // Function factories create functions based on returning inner functions that manipulate its own arguments and the arguments of the outer function.
 // Data encapsulation and private methods don’t exist natively in JavaScript but can be emulated with closures for data restriction and limited access.
+
+// generator buts a asterisk after function
+// introduces controlled flow and paused and yeild and such and such.
+// function* 
+// yield 'a'
+// you can you next().value and gets the next value
+// you can call yeild arguments insdie of functions to show what is passed in
+// Generators break the "run to completion" model and introduce functions that can start, pause, and reset
